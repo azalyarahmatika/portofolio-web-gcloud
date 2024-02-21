@@ -1,5 +1,11 @@
-runtime: nodejs10
+runtime: nodejs18
 handlers:
 - url: /
   static_files: index.html
   upload: index.html
+
+- url: /css
+  static_dir: css
+
+- url: /images
+  static_dir: images
